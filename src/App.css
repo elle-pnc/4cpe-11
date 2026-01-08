@@ -1,0 +1,15 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+/* Mobile container */
+.mobile-container {
+  max-width: 414px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow-x: hidden;
+}

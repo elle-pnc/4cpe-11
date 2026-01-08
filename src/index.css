@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Theme (Default) */
+:root {
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #e0e0e0;
+  
+  /* Text Colors */
+  --text-primary: #424242;
+  --text-secondary: #757575;
+  --text-tertiary: #9e9e9e;
+  
+  /* Border Colors */
+  --border-color: #e0e0e0;
+  --border-light: #f5f5f5;
+  
+  /* Accent Colors */
+  --accent-primary: #1e88e5;
+  --accent-primary-dark: #1565c0;
+  --accent-secondary: #42a5f5;
+  --accent-success: #4caf50;
+  --accent-error: #f44336;
+  --accent-warning: #ff9800;
+  
+  /* Card Colors */
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: rgba(0, 0, 0, 0.15);
+  
+  /* Input Colors */
+  --input-bg: #fafafa;
+  --input-border: #e0e0e0;
+  --input-focus-border: #1e88e5;
+  
+  /* Modal Colors */
+  --modal-overlay: rgba(0, 0, 0, 0.5);
+  --modal-bg: #ffffff;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  /* Background Colors - Using dark gray instead of pure black */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #2d2d2d;
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-tertiary: #808080;
+  
+  /* Border Colors */
+  --border-color: #333333;
+  --border-light: #2d2d2d;
+  
+  /* Accent Colors - Slightly desaturated for dark mode */
+  --accent-primary: #64b5f6;
+  --accent-primary-dark: #42a5f5;
+  --accent-secondary: #90caf9;
+  --accent-success: #66bb6a;
+  --accent-error: #ef5350;
+  --accent-warning: #ffb74d;
+  
+  /* Card Colors */
+  --card-bg: #1e1e1e;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: rgba(0, 0, 0, 0.4);
+  
+  /* Input Colors */
+  --input-bg: #2d2d2d;
+  --input-border: #404040;
+  --input-focus-border: #64b5f6;
+  
+  /* Modal Colors */
+  --modal-overlay: rgba(0, 0, 0, 0.7);
+  --modal-bg: #1e1e1e;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
